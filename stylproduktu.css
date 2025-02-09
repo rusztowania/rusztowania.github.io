@@ -1,0 +1,126 @@
+.product1-details {
+    width: 100%;
+    padding: 20px;
+    font-size: 14px;
+  }
+  .product1-details h3 {
+      color: red;
+        font-size: 1.4em;
+         margin-bottom: 10px;
+  }
+
+    .product1-details h4 {
+        margin-top: 20px;
+        font-size: 1.2em;
+          margin-bottom: 5px;
+          font-weight: bold;
+  }
+
+
+  .product1-details p {
+        margin-bottom: 10px;
+  }
+
+
+   .product1-details ul {
+       margin-left: 20px;
+       margin-bottom: 20px;
+   }
+#imgprodukt{
+    width: 30%; /* 50% = half of the parent width */
+  height:auto; 
+}
+.zdjecia{
+    margin-left: 1%;
+    display: flex;
+    flex-direction: row;
+}
+   .product1-details ul li{
+      margin-bottom: 5px;
+   }
+
+
+  .green {
+        color: green;
+    }
+
+
+
+
+
+    .products {
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .product1 {
+        width: 100%;
+        background-color: white;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        
+        transition: transform 0.3s ease;
+    }
+    
+    
+    .product1:hover {
+        transform: scale(1.05);
+    }
+    
+    
+    
+    .product1 img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 15px;
+    }
+    
+    
+    .product1 h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        color: var(--primary-color);
+    }
+    
+    .product1 p {
+        margin-bottom: 10px;
+        color: #666;
+    }
+
+    @media (max-width: 900px) {
+        .product1 {
+            width: calc(48% - 20px);
+        }
+        }
+        
+        @media (max-width: 600px) {
+        .product1 {
+            width: 100%;
+        }    }
+        .products-preamble {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px; /* Adds space between preamble and product listing */
+        }
+        
+        .products-preamble h1{
+             font-family: 'Oswald', sans-serif;
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+        
+        .products-preamble p {
+           color: #666;
+           font-style: italic;
+        }
