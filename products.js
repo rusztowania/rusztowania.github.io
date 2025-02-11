@@ -27,7 +27,7 @@ const productsData = [
     {   id: 904,
         category: 'Promocja',
         name: 'Rusztowanie elewacyjne jezdne w promocyjnej cenie',
-        image: 'https://github.com/rusztowania/rusztowania.github.io/blob/main/img/Promocja.jpg',
+        image: 'img/Promocja.jpg',
         description: 'Wytrzymałe i mobilne rusztowanie elewacyjne, idealne do prac na zewnątrz budynków.',
         price: '999 zł',
         learnMoreLink: 'https://example.com/product1'
@@ -35,7 +35,7 @@ const productsData = [
     {   id: 905,
         category: 'Promocja',
         name: 'Rusztowanie elewacyjne jezdne w promocyjnej cenie',
-        image: 'https://github.com/rusztowania/rusztowania.github.io/blob/main/img/Promocja.jpg',
+        image: 'img/Promocja.jpg',
         description: 'Wytrzymałe i mobilne rusztowanie elewacyjne, idealne do prac na zewnątrz budynków.',
         price: '999 zł',
         learnMoreLink: 'https://example.com/product1'
@@ -43,7 +43,7 @@ const productsData = [
     {   id: 906,
         category: 'Promocja',
         name: 'Rusztowanie elewacyjne jezdne w promocyjnej cenie',
-        image: 'https://github.com/rusztowania/rusztowania.github.io/blob/main/img/Promocja.jpg',
+        image: 'img/Promocja.jpg',
         description: 'Wytrzymałe i mobilne rusztowanie elewacyjne, idealne do prac na zewnątrz budynków.',
         price: '999 zł',
         learnMoreLink: 'https://example.com/product1'
