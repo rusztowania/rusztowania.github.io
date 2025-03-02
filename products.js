@@ -5,7 +5,7 @@ const productsData = [
     //     name: 'Rusztowanie elewacyjne jezdne w promocyjnej cenie',
     //     image: 'img/promocja.jpg',
     //     description: 'Wytrzymałe i mobilne rusztowanie elewacyjne, idealne do prac na zewnątrz budynków.',
-    //     price: '999 zł',
+    //     price: '99 zł',
     //     learnMoreLink: 'https://example.com/product1'
     // },
     // {   id: 902,
