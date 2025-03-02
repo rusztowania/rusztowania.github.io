@@ -3,9 +3,48 @@
 
 :root {
     --primary-color: #061d14;
-    --secondary-color: #214B16;
+    --secondary-color: #214a17;
     --accent-color: #71A064;
     --text-color: #120b0b;
+}
+aside {
+    visibility: hidden; /* Domyślnie ukryty na wszystkich urządzeniach */
+}
+
+/* Pokazujemy aside na większych ekranach (np. tablety, komputery) */
+@media (min-width: 768px) {
+    aside {
+        visibility: visible; /* Widoczny na ekranach powyżej 768px */
+    }
+}
+.zdd{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* header{
+    position: sticky;
+    top: 0px;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+} */
+strong{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#przedmowa{
+    background: linear-gradient(to left, rgba(6, 29, 20, 0.9) 50%, transparent 111%);
+}
+article div{
+    margin: 1%;
+}
+#przedmowa p{
+    font-weight: 1000;
+   
+    color: #ddd;
+    margin:0% ;
+    padding: 0%;
 }
 h5{text-align: center;}
 #pasek{
@@ -35,14 +74,25 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    
 }
-
 header {
+    background: linear-gradient(to right, rgba(6, 29, 20, 0.9) 50%, transparent 75%), 
+                url('rusztowanie4.jpg') no-repeat center/cover;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    min-height: 200px; /* Minimalna wysokość dla lepszej widoczności */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* header {
     background-color: var(--primary-color);
     color: white;
     padding: 20px 0;
     text-align: center;
-}
+} */
 
 .logo-contact {
     display: flex;
@@ -73,6 +123,7 @@ header {
     color: #e5e5e5;
     font-size: large;
     text-decoration: none;
+    
 }
 
 
@@ -87,9 +138,17 @@ header {
     margin-top: 20px;
 }
 
+a{
+    display: block; /* Link jako blok */
+    max-width: 100%; /* Nie przekracza kontenera */
+    white-space: nowrap; /* Zapobiega zawijaniu */
+    font-size: clamp(12px, 2.5vw, 16px); /* Skaluje czcionkę */
+    
+}
 .main-nav a {
+    
     display: inline-block;
-    margin: 0 10px;
+    margin:  10px;
     padding: 8px 15px;
     background-color: var(--secondary-color);
     color: white;
@@ -116,20 +175,23 @@ h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
 }
-
+/* =========================================== */
+body{
+    background: linear-gradient(to right, rgba(6, 29, 20, 0.9) 50%, transparent 75%)
+}
 main {
     display: flex;
     gap: 20px;
 }
-
+/* =========================================== */
 aside {
     width: 25%;
     padding: 20px;
-}
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif}
 
 .categories {
     position: sticky;
-    top: 20px;
+    top: 2%;
     max-height: calc(100vh - 40px);
     overflow-y: auto;
     background-color: var(--secondary-color);
@@ -163,15 +225,17 @@ aside {
 }
 
 .products {
-    width: 75%;
+    width: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 20px;
     padding: 20px;
+    align-self: center;
 }
 
 .product {
+    align-self:center;
     width: calc(31% - 20px);
     background-color: white;
     margin-bottom: 20px;
